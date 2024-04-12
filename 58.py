@@ -4,13 +4,9 @@
 
 def numeroOcurrencias(L):
     occ = []
-    cnt = 0
     for elmt in L:
-        for i in range (len(L)):
-            if L[i] == elmt:
-                cnt += 1
+        cnt = L.count(elmt)
         occ.append((elmt, cnt))
-        cnt = 0
     return list(set(occ))
 
 # Llamada a la función
